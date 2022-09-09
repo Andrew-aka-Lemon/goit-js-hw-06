@@ -29,9 +29,8 @@ button {
 
   display: flex;
   flex-wrap: wrap;
-  
-  gap: 30px;
 
+  gap: 30px;
 }
 
 .gallery__item {
@@ -41,4 +40,4 @@ button {
 .gallery__item > img {
   width: 100%;
   display: block;
-};
+}
