@@ -8,14 +8,15 @@ function dataCollector(event) {
   event.preventDefault();
 
   const userPass = event.currentTarget.elements.password.value;
-  const userLogin = event.currentTarget.elements.email.value;
+  const userEmail = event.currentTarget.elements.email.value;
 
-  if (userLogin === '' || userPass === '') {
+  if (userEmail === '' || userPass === '') {
     window.alert('Всі поля повинні бути заповнені');
+    return;
   }
 
   formData = {
-    userLogin,
+    userEmail,
     userPass,
   };
 

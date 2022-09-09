@@ -41,3 +41,7 @@ button {
   width: 100%;
   display: block;
 }
+
+.new-box {
+  margin-bottom: 10px;
+}
