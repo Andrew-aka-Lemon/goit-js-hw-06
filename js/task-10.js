@@ -22,10 +22,9 @@ function createBoxes(amount) {
 
   for (let index = 0; index < amount; index += 1) {
     const newBox = document.createElement('div');
-    const divSideIncrement = index * 10;
 
-    newBox.style.width = `${30 + divSideIncrement}px`;
-    newBox.style.height = `${30 + divSideIncrement}px`;
+    newBox.style.width = `${30 + index * 10}px`;
+    newBox.style.height = `${30 + index * 10}px`;
 
     do {
       newBox.style.backgroundColor = getRandomHexColor();
