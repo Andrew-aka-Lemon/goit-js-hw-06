@@ -3,14 +3,14 @@ const inputRef = document.querySelector('#validation-input');
 
 inputRef.addEventListener('input', inputLengthChecker);
 
-function inputLengthChecker(elem) {
-  if (elem.currentTarget.value.length >= 0 && elem.currentTarget.value.length < 6) {
-    inputRef.classList.add('invalid');
-    inputRef.classList.remove('valid');
+function inputLengthChecker(event) {
+  if (event.currentTarget.value.length === 6) {
+    inputRef.classList.add('valid');
+    inputRef.classList.remove('invalid');
     return;
   }
-  inputRef.classList.add('valid');
-  inputRef.classList.remove('invalid');
+  inputRef.classList.add('invalid');
+  inputRef.classList.remove('valid');
 
-  console.log(elem.currentTarget.value.length);
+  console.log(event.currentTarget.value.length);
 }
