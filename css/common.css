@@ -42,6 +42,13 @@ button {
   display: block;
 }
 
-.new-box {
+/* .new-box {
   margin-bottom: 10px;
+} */
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
 }

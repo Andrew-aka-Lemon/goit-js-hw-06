@@ -30,8 +30,6 @@ function createBoxes(amount) {
       newBox.style.backgroundColor = getRandomHexColor();
     } while (newBox.style.backgroundColor.length < 7);
 
-    newBox.classList.add('new-box');
-
     arr.push(newBox);
   }
   elemRefs.mainBox.append(...arr);
